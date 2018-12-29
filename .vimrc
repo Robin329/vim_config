@@ -365,7 +365,7 @@ function QuoteDelim(char)
 nnoremap <F8> :SrcExplToggle<CR>                             "打开/闭浏览窗口
 " // The switch of the Source Explorer 
 " nmap <Fx> :SrcExplToggle<CR>
-autocmd VimEnter * SrcExpl
+"autocmd VimEnter * SrcExpl	"打开vim时自动打开srcExpl
 "nmap <Fx> :SrcExplToggle<CR>  
 "
 " " // Set the height of Source Explorer window 
