@@ -303,8 +303,8 @@ let tags = taglist(newpattern)
 		"实用设置
         "设置F2打开tlist
         "nmap  <F2> :TlistToggle<cr>
-        "设置F4打开MRU
-        nmap  <F4> :MRU<cr>
+        "设置F7打开MRU
+        nmap  <F7> :MRU<cr>
 	"设置F6打开diffchanges
 	nmap  <F6> :DiffChangesDiffToggle<cr>
         " Space to command mode.
@@ -375,10 +375,10 @@ let g:SrcExpl_winHeight = 8
 let g:SrcExpl_refreshTime = 100 
 
 " // Set "ENTER" key to jump into the exact definition context 
-"let g:SrcExpl_jumpKey = "<F5>" 
+let g:SrcExpl_jumpKey = "<F5>" 
 "
 " " // Set "Space" key for back from the definition context 
-"let g:SrcExpl_gobackKey = "<F6>" 
+let g:SrcExpl_gobackKey = "<F6>" 
 "
 " " // In order to avoid conflicts, the Source Explorer should know what
 " plugins
@@ -424,4 +424,7 @@ let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ."
     let g:airline#extensions#tabline#fnamemod = ':t'
 
 """"""""""""""""""""""""""""""""""""""""
+"	
+""""""""""""""""""""""""""""""""""""""""
+
 
