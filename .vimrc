@@ -1,5 +1,9 @@
 set wildmenu
 " Other settings.
+set mouse=a	" 设置鼠标操作
+"set cursorline	" 突出显示当前行
+"set cursorcolumn  "or set cuc 设置光标所在的列
+set t_Co=256	" 在终端启用256色
 set autoindent
 set autoread
 set autowrite
@@ -15,7 +19,15 @@ set ai!
 set tags=tags;
 set autochdir
 set tabstop=4
-
+set laststatus=2	"启用状态栏信息
+set cmdheight=2                                       "设置命令行的高度为2，默认为1
+"set ignorecase                                        "搜索模式里忽略大小写
+"set smartcase                                         "如果搜索模式包含大写字符，不使用 'ignorecase' 选项，只有在输入搜索模式并且打开 'ignorecase' 选项时才会使用
+" set noincsearch                                       "在输入要搜索的文字时，取消实时匹配
+" 每行超过80个的字符用下划线标示
+au BufWinEnter * let w:m2=matchadd('Underlined', '\%>' . 80 . 'v.\+', -1)
+"fold
+"set foldmethod=indent           "set manual foldmethod
 " movement
 set scrolloff=7                 " keep 3 lines when scrolling
 
@@ -198,11 +210,15 @@ if has("cscope")
     nmap <C-@><C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 	"设置快捷键:
 
-	map <F3> :NERDTreeMirror<CR>
-	map <F3> :NERDTreeToggle<CR>
+	map <F2> :NERDTreeMirror<CR>
+	map <F2> :NERDTreeToggle<CR>
 	" 在 vim 启动的时候默认开启 NERDTree（autocmd 可以缩写为 au）
 	"autocmd VimEnter * NERDTree
-	" 按下 F2 调出/隐藏 NERDTree
+	"去除第一行的帮助提示
+	"let NERDTreeMinimalUI=1
+	"在左边占多宽
+	"let NERDTreeWinSize=28
+	" 按下 Fx 调出/隐藏 NERDTree
 	"map  :silent! NERDTreeToggle
 	
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -242,7 +258,7 @@ let tags = taglist(newpattern)
 		" CTags{{{
 		"2014-7-13
 		"默认打开Taglist 
-		let Tlist_Auto_Open=1 
+		let Tlist_Auto_Open=0 
 		let Tlist_Sort_Type = "name"    
 		let Tlist_Compart_Format = 1    
 		let Tlist_Exist_OnlyWindow = 1  
@@ -265,7 +281,16 @@ let tags = taglist(newpattern)
 		"tagBar
 		let g:tagbar_width=30
 		let g:tagbar_autofocus=1
-		nmap <F7> :TagbarToggle<CR>
+		"设置Fx为Tagbar快捷方式
+		"nmap <F2> :TagbarToggle<CR>
+		"当编辑代码时，在Tagbar自动追踪变量
+		let g:tagbar_autoshowtag = 1
+		autocmd VimEnter * nested :TagbarOpen
+		wincmd h
+		"如果不加这句，打开vim的时候当前光标会在Nerdtree区域
+		autocmd VimEnter * wincmd h
+		
+		"""""""""""""""""""""""""""
 		"Ack快捷键设置方式
 		map <c-a> :!ack<space>
 		map <c-u> :Ack<space>
@@ -277,7 +302,7 @@ let tags = taglist(newpattern)
 		"""""""""""""""""""""""""""""""""""""""""""""""""""
 		"实用设置
         "设置F2打开tlist
-        nmap  <F2> :TlistToggle<cr>
+        "nmap  <F2> :TlistToggle<cr>
         "设置F4打开MRU
         nmap  <F4> :MRU<cr>
 	"设置F6打开diffchanges
@@ -330,4 +355,70 @@ function QuoteDelim(char)
 		return a:char.a:char."\<Esc>i"
 		endif
         endf
+" -----------------------------------------------------------------------------
+"  < SrcExpl 插件配置 >
+" -----------------------------------------------------------------------------
+" 增强源代码浏览，其功能就像Windows中的"Source Insight"
+" nnoremap <F1> :SrcExpl                                   "打开浏览窗口
+" :SrcExplClose                              "关闭浏览窗口
+" SrcExplToggle
+nnoremap <F8> :SrcExplToggle<CR>                             "打开/闭浏览窗口
+" // The switch of the Source Explorer 
+" nmap <Fx> :SrcExplToggle<CR>
+autocmd VimEnter * SrcExpl
+"nmap <Fx> :SrcExplToggle<CR>  
+"
+" " // Set the height of Source Explorer window 
+let g:SrcExpl_winHeight = 8 
+"
+"" // Set 100 ms for refreshing the Source Explorer 
+let g:SrcExpl_refreshTime = 100 
+
+" // Set "ENTER" key to jump into the exact definition context 
+"let g:SrcExpl_jumpKey = "<F5>" 
+"
+" " // Set "Space" key for back from the definition context 
+"let g:SrcExpl_gobackKey = "<F6>" 
+"
+" " // In order to avoid conflicts, the Source Explorer should know what
+" plugins
+" " // except itself are using buffers. And you need add their buffer names
+" into
+" " // below listaccording to the command ":buffers!"
+ let g:SrcExpl_pluginList = [ 
+         \ "__Tag_List__", 
+                 \ "_NERD_tree_" 
+                     \  ] 
+
+                     " // Enable/Disable the local definition searching, and note that this is not guaranteed to work, the Source Explorer doesn't check the syntax for now. 
+                     " // It only searches for a match with the keyword
+                     " according to command 'gd' 
+let g:SrcExpl_searchLocalDef = 1 
+
+"" // Do not let the Source Explorer update the tags file when opening 
+let g:SrcExpl_isUpdateTags = 0 
+
+" // Use 'Exuberant Ctags' with '--sort=foldcase -R .' or '-L cscope.files' to 
+" " // create/update the tags file 
+let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ." 
+" let g:SrcExpl_updateTagsCmd = "ctags ." 
+"
+" " // Set "<F12>" key for updating the tags file artificially 
+" let g:SrcExpl_updateTagsKey = "<Fx>" 
+"
+" " // Set "<Fx>" key for displaying the previous definition in the jump list 
+ let g:SrcExpl_prevDefKey = "<F3>" 
+"
+" " // Set "<Fx>" key for displaying the next definition in the jump list 
+ let g:SrcExpl_nextDefKey = "<F4>"
+"                     "
+" "
+" """"""""""""""""""""""""""""""""""""""
+"	airline
+" """"""""""""""""""""""""""""""""""""""
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#buffer_nr_show = 1
+    let g:airline#extensions#tabline#fnamemod = ':t'
+
+""""""""""""""""""""""""""""""""""""""""
 
