@@ -282,7 +282,7 @@ let tags = taglist(newpattern)
 		let g:tagbar_width=30
 		let g:tagbar_autofocus=1
 		"设置Fx为Tagbar快捷方式
-		nmap <F7> :TagbarToggle<CR>
+		nmap <F9> :TagbarToggle<CR>
 		"当编辑代码时，在Tagbar自动追踪变量
 		let g:tagbar_autoshowtag = 1
 		autocmd VimEnter * nested :TagbarOpen
@@ -375,10 +375,10 @@ let g:SrcExpl_winHeight = 8
 let g:SrcExpl_refreshTime = 100 
 
 " // Set "ENTER" key to jump into the exact definition context 
-let g:SrcExpl_jumpKey = "<F5>" 
+let g:SrcExpl_jumpKey = "<F11>" 
 "
 " " // Set "Space" key for back from the definition context 
-let g:SrcExpl_gobackKey = "<F6>" 
+let g:SrcExpl_gobackKey = "<F12>" 
 "
 " " // In order to avoid conflicts, the Source Explorer should know what
 " plugins
