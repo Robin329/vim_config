@@ -416,6 +416,9 @@ let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ."
 " """"""""""""""""""""""""""""""""""""""
 "	airline
 " """"""""""""""""""""""""""""""""""""""
+"设置切换Buffer快捷键"
+ nnoremap <C-N> :bn<CR>
+ nnoremap <C-P> :bp<CR>
     let g:airline#extensions#tabline#enabled = 1
     let g:airline#extensions#tabline#buffer_nr_show = 1
     let g:airline#extensions#tabline#fnamemod = ':t'
