@@ -375,10 +375,10 @@ let g:SrcExpl_winHeight = 8
 let g:SrcExpl_refreshTime = 100 
 
 " // Set "ENTER" key to jump into the exact definition context 
-let g:SrcExpl_jumpKey = "<F11>" 
+"let g:SrcExpl_jumpKey = "<F11>" 
 "
 " " // Set "Space" key for back from the definition context 
-let g:SrcExpl_gobackKey = "<F12>" 
+"let g:SrcExpl_gobackKey = "<F12>" 
 "
 " " // In order to avoid conflicts, the Source Explorer should know what
 " plugins
