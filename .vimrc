@@ -58,7 +58,7 @@ set smartcase                   " no ignorecase if Uppercase char present
 
 
 " tab
-set expandtab                   " expand tabs to spaces
+"set expandtab                   " expand tabs to spaces
 set smarttab
 set shiftround
 
