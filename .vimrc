@@ -1,6 +1,14 @@
 set wildmenu
 " Other settings.
-set mouse=a	" 设置鼠标操作
+set mouse=	" 设置鼠标操作
+"n 普通模式
+"v 可视模式
+"i 插入模式
+"c 命令行模式
+"h 在帮助文件里，以上所有的模式
+"a 以上所有的模式
+"r 跳过 |hit-enter| 提示
+"A 在可视模式下自动选择
 "set cursorline	" 突出显示当前行
 "set cursorcolumn  "or set cuc 设置光标所在的列
 set t_Co=256	" 在终端启用256色
