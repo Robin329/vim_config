@@ -30,8 +30,10 @@ set tabstop=4
 
 "hightlight current line
 set cursorline 
-hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white 
-hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white 
+hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+"开启高亮光标列
+"set cursorcolumn
+"hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 set laststatus=2	"启用状态栏信息
 set cmdheight=2                                       "设置命令行的高度为2，默认为1
 "set ignorecase                                        "搜索模式里忽略大小写
