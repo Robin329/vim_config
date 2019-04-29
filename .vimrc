@@ -27,7 +27,7 @@ set ai!
 set tags=tags;
 set autochdir
 set tabstop=4
-
+set wrap	"自动换行
 "hightlight current line
 set cursorline 
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
