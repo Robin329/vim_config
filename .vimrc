@@ -27,7 +27,7 @@ set ai!
 set tags=tags;
 set autochdir
 set tabstop=4
-set wrap	"自动换行
+
 "hightlight current line
 set cursorline 
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
@@ -50,7 +50,7 @@ set scrolloff=7                 " keep 3 lines when scrolling
 " show
 set ruler                       " show the current row and column
 set number                      " show line numbers
-set nowrap
+set wrap			" Automatic line break
 set showcmd                     " display incomplete commands
 set showmode                    " display current modes
 set showmatch                   " jump to matches when entering parentheses
