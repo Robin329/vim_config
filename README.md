@@ -17,3 +17,9 @@
 `F8`：打开函数索引
 
 `F9`：打开函数名列表
+
+##### 2.cscope_to_file.py
+
+a.先使用`ctags -R`索引代码
+
+b.再使用`python cscope_to_file.py`生成`cscope.files`，有了这个文件我们在执行`cscope -Rbkq`
