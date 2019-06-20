@@ -30,11 +30,12 @@ b.再使用`python cscope_to_file.py`生成`cscope.files`，有了这个文件�
 vim ~/.vim/c-support/templates/Templates
 
 2.详细的使用方法：
+https://blog.csdn.net/zlzlei/article/details/7860494
 ---------------------附:详细的c.vim hotkey-------------------------
 
   \hm       show manual for word under the cursor (n,i)
 
- \hm       show manual for word under the cursor (n,i)
+  \hm       show manual for word under the cursor (n,i)
   \hp       show plugin help                      (n,i)
 
   -- Comments -----------------------------------------------------------
