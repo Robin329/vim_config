@@ -483,8 +483,47 @@ unlet s:ft
 let &cpo = s:cpo_save
 unlet s:cpo_save
 " vim: ts=8
+
 "highlight Functions
 syn match cFunctions "\<[a-zA-Z_][a-zA-Z_0-9]*\>[^()]*)("me=e-2
 syn match cFunctions "\<[a-zA-Z_][a-zA-Z_0-9]*\>\s*("me=e-1
-hi cFunctions gui=NONE cterm=bold  ctermfg=blue
+hi cFunctions gui=NONE cterm=none  ctermfg=darkgreen
+
+" Highlight Class and Function names
+"syn match    cCustomParen    "(" contains=cParen,cCppParen
+"syn match    cCustomFunc     "\w\+\s*(" contains=cCustomParen
+"syn match    cCustomScope    "::"
+"syn match    cCustomClass    "\w\+\s*::" contains=cCustomScope
+
+"hi cCustomFunc  gui=NONE cterm=bold ctermfg=blue
+"hi cCustomClass gui=NONE cterm=bold ctermfg=green
+
+"========================================================
+" Highlight All Math Operator
+"========================================================
+" C math operators
+"syn match cMathOperator  "[-+*%=<>(){};|.,&!^~:]"
+syn match cMathOperator   "[&|!=|++]"
+"" C pointer operators
+syn match cPointerOperator  "[->|.|*]"
+"" C logical operators - boolean results
+"syn match cLogicalOperator  "[!<>]=/="
+syn match cLogicalOperator  "/(&&/|||/)="
+"" C bit operators
+"syn match cBinaryOperator  "/(&/||/|/^/|<</|>>/)=/="
+"syn match cBinaryOperator  "\~"
+"syn match cBinaryOperatorError  "\~="
+"" More C logical operators - highlight in preference to binary
+"syn match cLogicalOperator  "&&/|||"
+"syn match cLogicalOperatorError  "/(&&/|||/)="
+
+
+" Math Operator
+hi cMathOperator gui=NONE ctermfg=red
+hi cPointerOperator gui=NONE ctermfg=darkgreen
+hi cLogicalOperator gui=NONE ctermfg=red
+hi cBinaryOperator gui=NONE ctermfg=red
+"hi cBinaryOperatorError gui=NONE ctermfg=green
+"hi cLogicalOperator gui=NONE ctermfg=green
+"hi cLogicalOperatorError gui=NONE ctermfg=green
 
