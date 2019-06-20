@@ -23,3 +23,14 @@
 a.先使用`ctags -R`索引代码
 
 b.再使用`python cscope_to_file.py`生成`cscope.files`，有了这个文件我们在执行`cscope -Rbkq`
+
+##### 3.更新c.vim插件
+
+1.修改AUTHOR COMPANY等得默认值：
+vim ~/.vim/c-support/templates/Templates
+
+2.详细的使用方法：
+---------------------附:详细的c.vim hotkey-------------------------
+
+  \hm       show manual for word under the cursor (n,i)
+
