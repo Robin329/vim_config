@@ -299,7 +299,7 @@ let tags = taglist(newpattern)
 		let g:tagbar_width=30
 		let g:tagbar_autofocus=1
 		"设置Fx为Tagbar快捷方式
-		nmap <F9> :TagbarToggle<CR>
+		nmap <F10> :TagbarToggle<CR>
 		"当编辑代码时，在Tagbar自动追踪变量
 		let g:tagbar_autoshowtag = 1
 		autocmd VimEnter * nested :TagbarOpen
