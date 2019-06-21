@@ -487,7 +487,7 @@ unlet s:cpo_save
 "highlight Functions
 syn match cFunctions "\<[a-zA-Z_][a-zA-Z_0-9]*\>[^()]*)("me=e-2
 syn match cFunctions "\<[a-zA-Z_][a-zA-Z_0-9]*\>\s*("me=e-1
-hi cFunctions gui=NONE cterm=none  ctermfg=darkgreen
+hi cFunctions gui=NONE cterm=none  ctermfg=green
 
 " Highlight Class and Function names
 "syn match    cCustomParen    "(" contains=cParen,cCppParen
@@ -503,12 +503,12 @@ hi cFunctions gui=NONE cterm=none  ctermfg=darkgreen
 "========================================================
 " C math operators
 "syn match cMathOperator  "[-+*%=<>(){};|.,&!^~:]"
-syn match cMathOperator   "[&|!=|++]"
+syn match cMathOperator   "[&|!=|++|~|&&|>>=|<<=]"
 "" C pointer operators
 syn match cPointerOperator  "[->|.|*]"
 "" C logical operators - boolean results
 "syn match cLogicalOperator  "[!<>]=/="
-syn match cLogicalOperator  "/(&&/|||/)="
+"syn match cLogicalOperator  "/(&&/|||/)="
 "" C bit operators
 "syn match cBinaryOperator  "/(&/||/|/^/|<</|>>/)=/="
 "syn match cBinaryOperator  "\~"
@@ -520,7 +520,7 @@ syn match cLogicalOperator  "/(&&/|||/)="
 
 " Math Operator
 hi cMathOperator gui=NONE ctermfg=red
-hi cPointerOperator gui=NONE ctermfg=darkgreen
+hi cPointerOperator gui=NONE ctermfg=green
 hi cLogicalOperator gui=NONE ctermfg=red
 hi cBinaryOperator gui=NONE ctermfg=red
 "hi cBinaryOperatorError gui=NONE ctermfg=green
