@@ -40,7 +40,7 @@ set cmdheight=2                                       "设置命令行的高度�
 "set smartcase                                         "如果搜索模式包含大写字符，不使用 'ignorecase' 选项，只有在输入搜索模式并且打开 'ignorecase' 选项时才会使用
 " set noincsearch                                       "在输入要搜索的文字时，取消实时匹配
 " 每行超过80个的字符用下划线标示
-au BufWinEnter * let w:m2=matchadd('Underlined', '\%>' . 80 . 'v.\+', -1)
+"au BufWinEnter * let w:m2=matchadd('Underlined', '\%>' . 80 . 'v.\+', -1)
 "fold
 "set foldmethod=indent           "set manual foldmethod
 " movement
