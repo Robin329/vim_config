@@ -302,7 +302,7 @@ let tags = taglist(newpattern)
 		nmap <F10> :TagbarToggle<CR>
 		"当编辑代码时，在Tagbar自动追踪变量
 		let g:tagbar_autoshowtag = 1
-		autocmd VimEnter * nested :TagbarOpen
+		"autocmd VimEnter * nested :TagbarOpen
 		wincmd h
 		"如果不加这句，打开vim的时候当前光标会在Nerdtree区域
 		autocmd VimEnter * wincmd h
