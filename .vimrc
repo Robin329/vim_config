@@ -322,6 +322,7 @@ let tags = taglist(newpattern)
         "nmap  <F2> :TlistToggle<cr>
         "设置F7打开MRU
         nmap  <F7> :MRU<cr>
+	let MRU_File='/tmp/mru_files'
 	"设置F6打开diffchanges
 	nmap  <F6> :DiffChangesDiffToggle<cr>
         " Space to command mode.
