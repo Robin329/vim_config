@@ -442,7 +442,7 @@ let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ."
     let g:airline#extensions#tabline#fnamemod = ':t'
 
 """"""""""""""""""""""""""""""""""""""""
-"	
+" Rainbow
 """"""""""""""""""""""""""""""""""""""""
-
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
