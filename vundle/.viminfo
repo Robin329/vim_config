@@ -1,0 +1,571 @@
+# 这个 viminfo 文件是由 Vim 8.2 所产生。
+# 如果想要自行修改请特别小心！
+
+# Viminfo version
+|1,4
+
+# 文件被写的时候 ‘encoding’ 的值
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# 上个 Search 图案：
+~MSle0~/python
+
+# 命令行 历史记录 (从新到旧)：
+:q
+|2,0,1578471619,,"q"
+:qa
+|2,0,1578471602,,"qa"
+:PluginInstall
+|2,0,1578471583,,"PluginInstall"
+:wq
+|2,0,1578471290,,"wq"
+:PluginsInstall
+|2,0,1578468455,,"PluginsInstall"
+:q 
+|2,0,1578468436,,"q "
+:PluginsInstall ack
+|2,0,1578468356,,"PluginsInstall ack"
+:Pluginsintall
+|2,0,1578468348,,"Pluginsintall"
+:PluginSearch ack
+|2,0,1578468226,,"PluginSearch ack"
+:PluginClean!
+|2,0,1578467990,,"PluginClean!"
+:PluginSearch NERD
+|2,0,1578467789,,"PluginSearch NERD"
+:w
+|2,0,1578467637,,"w"
+:e
+|2,0,1577945717,,"e"
+:Q
+|2,0,1577264116,,"Q"
+:q\
+|2,0,1577263735,,"q\\"
+:q!
+|2,0,1577165667,,"q!"
+:wq!
+|2,0,1577165660,,"wq!"
+
+# 查找字符串 历史记录 (从新到旧)：
+? ^.\+$
+|2,1,1578471597,,"^.\\+$"
+?/pow
+|2,1,1578471463,47,"pow"
+?/python
+|2,1,1578457317,47,"python"
+?/a600000.ssusb
+|2,1,1577944351,47,"a600000.ssusb"
+?/too
+|2,1,1577264073,47,"too"
+?/====
+|2,1,1577260485,47,"===="
+
+# 表达式 历史记录 (从新到旧)：
+
+# 输入行 历史记录 (从新到旧)：
+
+# Debug Line 历史记录 (从新到旧)：
+
+# 寄存器:
+""1	LINE	0
+	
+|3,1,1,1,1,0,1578468192,""
+"2	LINE	0
+	作者：滚雪球的哈士奇
+|3,0,2,1,1,0,1578468191,"作者：滚雪球的哈士奇"
+"3	LINE	0
+	链接：https://juejin.im/post/5c8711115188257b0411b71a
+|3,0,3,1,1,0,1578468191,"链接：https://juejin.im/post/5c8711115188257b0411b71a"
+"4	LINE	0
+	来源：掘金
+|3,0,4,1,1,0,1578468190,"来源：掘金"
+"5	LINE	0
+	著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+|3,0,5,1,1,0,1578468190,"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"
+"6	LINE	0
+	" ----------------------------- Vundle End   -----------------------------
+|3,0,6,1,1,0,1578468048,"\" ----------------------------- Vundle End   -----------------------------"
+"7	LINE	0
+	filetype plugin indent on
+|3,0,7,1,1,0,1578468048,"filetype plugin indent on"
+"8	LINE	0
+	call vundle#end()
+|3,0,8,1,1,0,1578468047,"call vundle#end()"
+"9	LINE	0
+	
+|3,0,9,1,1,0,1578468047,""
+
+# 全局变量:
+!ST_WIN_CMD	NUM	0
+!ST_WIN_SH	NUM	1
+!ST_UNIX	NUM	2
+
+# 文件标记:
+'0  1  0  ~/下载/vim82/test
+|4,48,1,0,1578471619,"~/下载/vim82/test"
+'1  3  0  ~/下载/vim82/NERD_tree_1
+|4,49,3,0,1578471602,"~/下载/vim82/NERD_tree_1"
+'2  4  0  ~/下载/vim82/NERD_tree_1
+|4,50,4,0,1578471602,"~/下载/vim82/NERD_tree_1"
+'3  1  0  /tmp/v3INrZN/2
+|4,51,1,0,1578468543,"/tmp/v3INrZN/2"
+'4  457  0  ~/.vimrc
+|4,52,457,0,1578468194,"~/.vimrc"
+'5  1  0  ~/test
+|4,53,1,0,1578468149,"~/test"
+'6  1  0  ~/.vim
+|4,54,1,0,1578468103,"~/.vim"
+'7  448  0  ~/.vimrc
+|4,55,448,0,1578468051,"~/.vimrc"
+'8  448  0  ~/.vimrc
+|4,56,448,0,1578468051,"~/.vimrc"
+'9  458  0  ~/.vimrc
+|4,57,458,0,1578467847,"~/.vimrc"
+
+# 跳转列表 (从新到旧):
+-'  1  0  ~/下载/vim82/test
+|4,39,1,0,1578471619,"~/下载/vim82/test"
+-'  3  0  ~/下载/vim82/NERD_tree_1
+|4,39,3,0,1578471602,"~/下载/vim82/NERD_tree_1"
+-'  4  0  ~/下载/vim82/NERD_tree_1
+|4,39,4,0,1578471602,"~/下载/vim82/NERD_tree_1"
+-'  45  2  ~/下载/vim82/NERD_tree_1
+|4,39,45,2,1578471576,"~/下载/vim82/NERD_tree_1"
+-'  1  0  ~/下载/vim82/NERD_tree_1
+|4,39,1,0,1578471576,"~/下载/vim82/NERD_tree_1"
+-'  46  2  ~/下载/vim82/NERD_tree_1
+|4,39,46,2,1578471576,"~/下载/vim82/NERD_tree_1"
+-'  1  0  ~/下载/vim82/NERD_tree_1
+|4,39,1,0,1578471576,"~/下载/vim82/NERD_tree_1"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  1  0  /tmp/v3INrZN/2
+|4,39,1,0,1578468543,"/tmp/v3INrZN/2"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+-'  457  0  ~/.vimrc
+|4,39,457,0,1578468194,"~/.vimrc"
+
+# 文件内的标记历史记录 (从新到旧):
+
+> ~/下载/vim82/test
+	*	1578471615	0
+	"	1	0
+
+> ~/下载/vim82/[Lookup File]
+	*	1578471615	0
+	"	1	0
+	^	1	0
+
+> ~/下载/vim82/NERD_tree_1
+	*	1578471612	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.vimrecent
+	*	1578471606	0
+	"	1	0
+
+> ~/下载/vim82/[Vundle] Installer
+	*	1578471583	0
+	"	19	0
+	.	1	0
+	+	36	0
+	+	19	0
+	+	1	0
+
+> ~/[Vundle] Installer
+	*	1578471216	0
+	"	18	0
+	.	1	0
+	+	1	0
+
+> /tmp/v3INrZN/2
+	*	1578468529	0
+	"	1	0
+
+> ~/.vimrc
+	*	1578468192	0
+	"	457	0
+	.	458	0
+	+	447	77
+	+	446	10
+	+	449	99
+	+	449	0
+	+	448	74
+	+	458	99
+	+	458	0
+
+> ~/test
+	*	1578468148	0
+	"	1	0
+
+> /usr/local/share/vim/vim82/doc/help.txt
+	*	1578468147	0
+	"	1	0
+
+> ~/.vim
+	*	1578468101	0
+	"	1	0
+
+> ~/.vim/plugin/YouCompleteMe/NERD_tree_1
+	*	1578458094	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/下载/vim82/src/Makefile
+	*	1578457362	0
+	"	1914	4
+
+> ~/下载/vim82/src/Make
+	*	1578457310	0
+	"	1	0
+
+> ~/下载/vim82/ci/appveyor.bat
+	*	1578456972	0
+	"	1	0
+
+> ~/wakeup_sources.txt
+	*	1577945731	0
+	"	643	0
+
+> /etc/udev/rules.d/50-Android.rules
+	*	1577445827	0
+	"	1	40
+	^	1	41
+	.	1	40
+	+	1	40
+
+> /etc/udev/NERD_tree_1
+	*	1577445679	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/workspace/project/git_upload/Robin-linux-lab/workspace/.git/COMMIT_EDITMSG
+	*	1577426528	0
+	"	1	20
+	^	1	21
+	.	1	20
+	+	1	20
+
+> ~/workspace/project/linux-5.4.6/ipc/compat.c
+	*	1577422319	0
+	"	1	0
+
+> ~/workspace/project/linux-5.4.6/NERD_tree_1
+	*	1577422315	0
+	"	15	0
+	.	1	0
+	+	1	0
+
+> ~/workspace/project/git_upload/Robin-linux-lab/workspace/robin_lab/.gitignore
+	*	1577284431	0
+	"	52	0
+
+> ~/workspace/docker/cloud-lab/labs/linux-lab/.gitmodules
+	*	1577277614	0
+	"	60	43
+	^	60	44
+	.	60	43
+	+	57	23
+	+	60	43
+
+> ~/workspace/project/git_upload/Robin-linux-lab/.git/COMMIT_EDITMSG
+	*	1577272724	0
+	"	2	0
+	^	2	0
+	.	1	23
+	+	3	0
+	+	1	23
+
+> ~/workspace/project/git_upload/Robin-linux-lab/.gitmodules
+	*	1577272675	0
+	"	60	47
+	^	60	48
+	.	60	47
+	+	57	2
+	+	60	47
+	+	57	23
+	+	60	47
+
+> ~/workspace/project/git_upload/Robin-linux-lab/README.md
+	*	1577265713	0
+	"	3	0
+	.	3	0
+	+	1	0
+	+	1297	0
+	+	1	0
+	+	1301	0
+	+	1	0
+	+	2	0
+	+	3	0
+
+> ~/workspace/project/git_upload/Robin-linux-lab/tools/NERD_tree_1
+	*	1577264557	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/workspace/project/git_upload/Robin-linux-lab/tools/.gitignore
+	*	1577264550	0
+	"	1	0
+
+> ~/workspace/test_git/NERD_tree_1
+	*	1577264275	0
+	"	1	1
+	.	1	0
+	+	1	0
+
+> ~/workspace/project/git_upload/Robin-linux-lab/.git/config
+	*	1577264093	0
+	"	1	0
+
+> ~/workspace/project/git_upload/Robin-linux-lab/.git/refs/remotes/linux-lab/master
+	*	1577263771	0
+	"	1	0
+
+> ~/workspace/project/git_upload/Robin-linux-lab/NERD_tree_1
+	*	1577263763	0
+	"	43	0
+	.	1	0
+	+	1	0
+
+> ~/workspace/project/git_upload/Robin-linux-lab/.gdbinit
+	*	1577263735	0
+	"	1	0
+
+> ~/workspace/project/git_upload/Robin-linux-lab/.gitignore
+	*	1577263560	0
+	"	1	0
+	.	9	0
+	+	1	0
+	+	9	0
+
+> ~/workspace/project/git_upload/Robin-linux-lab/boards/.gitignore
+	*	1577263546	0
+	"	1	0
+
+> ~/.bashrc
+	*	1577189211	0
+	"	118	0
+	.	118	0
+	+	118	0
+
+> ~/.config/terminator/config
+	*	1577167537	0
+	"	20	27
+	^	20	28
+	.	20	27
+	+	20	27
+
+> /etc/apt/sources.list.d/hzwhuang-ubuntu-ss-qt5-artful.list
+	*	1577166164	0
+	"	1	14
+	^	1	15
+	.	1	14
+	+	1	14
+
+> /etc/yum/repos.d/copr.repo
+	*	1577165737	0
+	"	1	35
+	^	1	36
+	.	1	35
+	+	1	35
+
+> /etc/yum/yum.conf
+	*	1577165589	0
+	"	1	0
+
+> ~/文档/tools/shadowsocks-qt5-master/build/NERD_tree_1
+	*	1577165577	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/文档/tools/Linux_config-master/config
+	*	1577164008	0
+	"	31	0
