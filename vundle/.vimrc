@@ -238,6 +238,9 @@ if has("cscope")
 	" 按下 Fx 调出/隐藏 NERDTree
 	"map  :silent! NERDTreeToggle
 	
+
+	" /usr/local/share/vim/vim82/colors/
+	"colorscheme molokai
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Config lookupfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -445,6 +448,41 @@ let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ."
 """"""""""""""""""""""""""""""""""""""""
 " Rainbaw 
  let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+ let g:rainbow_active = 1
+
+let g:rainbow_load_separately = [
+    \ [ '*' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
+    \ [ '*.tex' , [['(', ')'], ['\[', '\]']] ],
+    \ [ '*.cpp' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
+    \ [ '*.{html,htm}' , [['(', ')'], ['\[', '\]'], ['{', '}'], ['<\a[^>]*>', '</[^>]*>']] ],
+    \ ]
+
+let g:rainbow_guifgs = ['RoyalBlue3', 'DarkOrange3', 'DarkOrchid3', 'FireBrick']
+let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
+
+" Youcompleteme config
+ let g:ycm_confirm_extra_conf = 0
+" ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+"Exclude files and directories using Vim's wildignore and CtrlP's own g:ctrlp_custom_ignore:
+":help ctrlp-options for more info.
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+let g:ctrlp_user_command = 'find %s -type f'
+" neomake-multiprocess
+" :h neomakemp.txt
+"autodetect the existence of commands and select the faster one(rg > ag > grep)
+let g:neomakemp_grep_command = "ag"
+"following is default value
+let g:neomakemp_exclude_files=['*.jpg', '*.png', '*.min.js', '*.swp', '*.pyc','*.out','*.o']
+let g:neomakemp_exclude_dirs=[ '.git', 'bin', 'log', 'build', 'node_modules', '.bundle', '.tmp','.svn' ]
+
 " ----------------------------- Vundle Start -----------------------------
 set nocompatible
 filetype off
@@ -455,11 +493,14 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'https://github.com/mileszs/ack.vim.git'
 Plugin 'https://github.com/vim-airline/vim-airline.git'
 Plugin 'https://github.com/WolfgangMehner/vim-plugins.git'
+Plugin 'https://github.com/WolfgangMehner/c-support.git'
 Plugin 'https://github.com/chrisbra/changesPlugin.git'
 Plugin 'https://github.com/vim-scripts/genutils.git'
 Plugin 'https://github.com/vim-scripts/lookupfile.git'
 Plugin 'https://github.com/vim-scripts/mark.git'
-Plugin 'https://github.com/vim-scripts/molokai.git'
+Plugin 'neomake/neomake'
+Plugin 'tracyone/neomake-multiprocess'
+Plugin 'https://github.com/tomasr/molokai.git'
 Plugin 'https://github.com/vim-scripts/mru.git'
 Plugin 'https://github.com/preservim/nerdtree.git'
 Plugin 'https://github.com/vim-scripts/srcexpl.git'
@@ -467,8 +508,11 @@ Plugin 'https://github.com/vim-scripts/tagbar.git'
 Plugin 'https://github.com/frazrepo/vim-rainbow.git'
 Plugin 'https://github.com/vim-scripts/taglist.vim.git'
 Plugin 'https://github.com/powerline/powerline.git'
-
-
+Plugin 'https://github.com/ycm-core/YouCompleteMe.git'
+Plugin 'tibabit/vim-templates'
+Plugin 'romainl/vim-qf'
+Plugin 'kien/ctrlp.vim'
+Plugin 'dense-analysis/ale'
 
 call vundle#end()
 filetype plugin indent on
