@@ -1,5 +1,5 @@
 
-一、 Vim 的配置文件
+#### 一、 Vim 的配置文件
 在用户目录里面，有一个 .vimrc 文件。vim 在启动的时候会按照这个文件的内容来配置 vim。
 
 通过执行 cd ~ 进入用户目录；
@@ -29,12 +29,14 @@ CentOS ：执行 sudo yum install git 。
 为了在下面粘贴时得到预期的结果，先执行 vim ~/.vimrc ，在最后一行下面添加 set paste ，保存并退出。
 
 在 terminal 上执行:
-
+```
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
 vim ~/.vimrc
 把以下内容复制到开头：
 复制代码
 
+```
 " ----------------------------- Vundle Start -----------------------------
 set nocompatible
 filetype off
@@ -45,6 +47,7 @@ Plugin 'VundleVim/Vundle.vim'
 call vundle#end()
 filetype plugin indent on
 " ----------------------------- Vundle End   -----------------------------
+```
 
 复制代码保存并退出。
 四、 示例（安装目录浏览插件）
@@ -98,13 +101,15 @@ Enter：打开文件（不分割窗格）
 复制代码
 嵌套括号不同染色
 
-Plugin 'luochen1990/rainbow'
+`Plugin 'luochen1990/rainbow'`
 
 在 .vimrc 里加入：
 
+```
 " ----------------------------- plugin rainbow start -----------------------------
 let g:rainbow_active = 1
 " ----------------------------- plugin rainbow end   -----------------------------
+```
 1）打开方式
 rainbow_active 设置为 1 的时候，会在开启 Vim 时启动。
 
@@ -124,11 +129,11 @@ Enter ：在已打开的文件中跳转到当前选择的变量或函数。
 
 3）备注
 在 .vimrc 里面添加：
-
+```
 " ----------------------------- plugin taglist start -----------------------------
 let Tlist_Use_Right_Window = 1
 " ----------------------------- plugin taglist start -----------------------------
-
+```
 这使得 taglist 在右侧窗口中显示窗口。这样可以避免其跟 NERDTree 在同一边。
 
 #### YCM 
