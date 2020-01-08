@@ -130,3 +130,38 @@ let Tlist_Use_Right_Window = 1
 " ----------------------------- plugin taglist start -----------------------------
 
 这使得 taglist 在右侧窗口中显示窗口。这样可以避免其跟 NERDTree 在同一边。
+
+#### YCM 
+Ubuntu 16.04 and later:
+
+sudo apt install build-essential cmake python3-dev
+Compiling YCM with semantic support for C-family languages through libclang:
+
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --clang-completer
+Compiling YCM with semantic support for C-family languages through clangd:
+
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --clangd-completer
+Note that you can install YCM with both libclang and clangd enabled. In that case clangd will be preferred unless you have the following in your vimrc:
+
+let g:ycm_use_clangd = 0
+Compiling YCM without semantic support for C-family languages:
+
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py
+The following additional language support options are available:
+
+C# support: install Mono and add --cs-completer when calling install.py.
+Go support: install Go and add --go-completer when calling install.py.
+JavaScript and TypeScript support: install Node.js and npm and add --ts-completer when calling install.py.
+Rust support: add --rust-completer when calling install.py.
+If your Python interpreter is older than 2.7.9, you will also need rustup in your PATH.
+Java support: install JDK8 (version 8 required) and add --java-completer when calling install.py.
+To simply compile with everything enabled, there's a --all flag. Note that this flag does not install clangd. You need to specify it manually by adding --clangd-completer. So, to install with all language features, ensure xbuild, go, tsserver, node, npm and tools are installed and in your PATH, then simply run:
+
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --all
+That's it. You're done. Refer to the User Guide section on how to use YCM. Don't forget that if you want the C-family semantic completion engine to work, you will need to provide the compilation flags for your project to YCM. It's all in the User Guide.
+
+YCM comes with sane defaults for its options, but you still may want to take a look at what's available for configuration. There are a few interesting options that are conservatively turned off by default that you may want to turn on.
