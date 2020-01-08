@@ -14,7 +14,10 @@
 
 PS ： 不过下面会使用复制到配置文件的方式
 
-它在 GitHub 的地址为：https://github.com/VundleVim/Vundle.vim 。
+它在 GitHub 的地址为：
+`https://github.com/VundleVim/Vundle.vim 。`
+`https://github.com/VundleVim/Vundle.vim#about`
+
 复制代码三、 Vundle 的下载、安装
 虽然按照官方的说法用 Git 来安装 Vundle 看起来好像比较麻烦，但其实更简单些。
 （1）安装 Git
@@ -135,6 +138,21 @@ let Tlist_Use_Right_Window = 1
 " ----------------------------- plugin taglist start -----------------------------
 ```
 这使得 taglist 在右侧窗口中显示窗口。这样可以避免其跟 NERDTree 在同一边。
+
+#### 卸载插件
+如果要卸载插件就只需要删除.vimrc中的Bundle，然后在Vim中执行
+:BundleClean
+
+#### Vundle常用命令
+```
+:BundleList              -列举列表(也就是.vimrc)中配置的所有插件
+:BundleInstall          -安装列表中的全部插件
+:BundleInstall!         -更新列表中的全部插件
+:BundleSearch foo   -查找foo插件
+:BundleSearch! foo  -刷新foo插件缓存
+:BundleClean           -清除列表中没有的插件
+:BundleClean!          -清除列表中没有的插件
+```
 
 #### YCM 
 ```
