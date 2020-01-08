@@ -138,6 +138,8 @@ let Tlist_Use_Right_Window = 1
 " ----------------------------- plugin taglist start -----------------------------
 ```
 这使得 taglist 在右侧窗口中显示窗口。这样可以避免其跟 NERDTree 在同一边。
+#### 查看vim路径
+:echo $VIMRUNTIME 
 
 #### 卸载插件
 如果要卸载插件就只需要删除.vimrc中的Bundle，然后在Vim中执行
